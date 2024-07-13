@@ -24,7 +24,7 @@ const Navbar = () => {
     <div className="nav w-full lg:fixed h-auto flex flex-col sm:flex-row lg:px-6 lg:py-2 sm:px-10 justify-between items-center border-b-2 bg-gradient-to-r from-purple-500 to-pink-500 md:p-1 top">
       <div>
         <img
-          className="logo h-10"
+          className="logo h-10 rounded-full"
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSidyDz4vUFPC_pC4WT44M-8OE1iyO2TcSr0Q&s"
           alt="logo"
         />

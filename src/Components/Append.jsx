@@ -11,13 +11,13 @@ const Append = ({ data, addToCart }) => {
         {data.map((e) => (
           <div
             key={e.id}
-            className="max-w-xs h-auto bg-zinc-100 shadow-md overflow-hidden"
+            className="max-w-xs h-auto bg-white shadow-md overflow-hidden pt-2 rounded-xl"
           >
             <Link to={`product/${e.id}`}>
               <img
                 src={e.image}
                 alt="product"
-                className="w-full h-48 object-cover"
+                className="w-11/12 h-48 object-cover shadow-md mx-auto "
               />
             </Link>
 

@@ -10,6 +10,7 @@ import Cart from "./Cart";
 import SignUp from "../pages/SignUp";
 import SignIp from "../pages/SignIn";
 import PrivateRoute from "./PrivateRoute";
+import NotFound from "../pages/NotFound";
 const Allroutes = () => {
   const routs = [
     { path: "/", element: <Home /> },
@@ -32,6 +33,7 @@ const Allroutes = () => {
     { path: "/electronics/product/:id", element: <SingleProduct /> },
     { path: "/mens/product/:id", element: <SingleProduct /> },
     { path: "/womens/product/:id", element: <SingleProduct /> },
+    { path: "*", element: <NotFound /> },
   ];
   return (
     <Routes>
