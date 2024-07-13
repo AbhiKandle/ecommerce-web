@@ -3,21 +3,21 @@ import { Link } from "react-router-dom";
 
 const Append = ({ data, addToCart }) => {
   return (
-    <div className="w-full grid justify-center items-center pb-10">
+    <div className="w-full flex-col   pb-10 ">
       <div className="w-full px-4 py-5 lg:mt-12">
         <h1 className="font-semibold text-4xl">GRAND GLOBAL BRANDS</h1>
       </div>
-      <div className="container px-4 sm:px-6 lg:px-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:mx-auto">
+      <div className="container  sm:px-6 lg:px-12 grid grid-cols-1 mx-auto sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:mx-auto">
         {data.map((e) => (
           <div
             key={e.id}
-            className="max-w-xs h-auto bg-white shadow-md overflow-hidden pt-2 rounded-xl"
+            className=" mx-10 sm:mx-0 py-4 bg-white shadow-md overflow-hidden pt-2 rounded-xl"
           >
             <Link to={`product/${e.id}`}>
               <img
                 src={e.image}
                 alt="product"
-                className="w-11/12 h-48 object-cover shadow-md mx-auto "
+                className="w-11/12 h-auto object-cover shadow-md mx-auto "
               />
             </Link>
 

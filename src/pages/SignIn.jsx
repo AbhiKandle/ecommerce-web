@@ -1,5 +1,5 @@
 import React, { useRef, useContext } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import useLocalStorage from "../hooks/useLocalStorage";
 import { AuthContext } from "../context/AuthContext";
 
@@ -56,6 +56,12 @@ const SignIn = () => {
             Sign In
           </button>
         </form>
+        <div className="flex justify-center mt-4">
+          <p>Already have an account?</p>
+          <Link to={"/signup"}>
+            <span className="text-blue-900 font-extrabold ml-1">Sign UP</span>
+          </Link>
+        </div>
       </div>
     </div>
   );
