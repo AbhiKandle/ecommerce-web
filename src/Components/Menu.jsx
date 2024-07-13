@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 
 const Menu = ({ isactive, signout, user, Links }) => {
   return (
-    <div className=" w-full  p-4 flex flex-col gap-4 justify-center items-center">
+    <div className=" fixed bg-gradient-to-r from-purple-500 to-pink-500  w-full  p-4 flex flex-col gap-4 justify-center items-center">
       <div className="flex flex-col gap-4">
         {Links.map((e) => (
           <NavLink
